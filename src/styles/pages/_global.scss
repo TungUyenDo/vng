@@ -1,0 +1,191 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+body{
+  font-family: 'AvenirNextLTPro-Regular' !important;
+}
+
+a{
+  outline: none
+}
+.gotoTop {
+    background: #ED5C00;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 33px;
+}
+
+.mobile {
+    display: none !important;
+
+    @media(max-width: 767px) {
+        display: block !important
+    }
+}
+
+.pc {
+    display: block !important;
+
+    @media(max-width: 767px) {
+        display: none !important
+    }
+}
+.zing-play__list-game{
+    .slick-list{
+        
+        @media(max-width: 767px) {
+            padding: 0 38% 0 0 !important;
+        }
+    }
+}
+
+.slick-slide{
+  outline: none
+}
+.zing-play__slider{
+    
+    .slick-dots{
+        display: flex;
+        bottom: 2px;
+        li{
+            flex-grow:1;
+            background: #757575;
+            height: 5px;
+            margin: 0 1px;
+            &.slick-active{
+                background: #F9A100;
+                height: 4px;
+            }
+            button{
+                border: none;
+                border-radius: 0;
+                width: 0;
+                height: 0;
+                padding: 0;
+                margin: 0;
+                &::before{
+                    font-size: 0
+                }
+            }
+        }
+    }
+}
+
+// animation
+  
+/* Bob */
+@-webkit-keyframes hvr-bob {
+    0% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+    50% {
+      -webkit-transform: translateY(-4px);
+      transform: translateY(-4px);
+    }
+    100% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+  }
+  @keyframes hvr-bob {
+    0% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+    50% {
+      -webkit-transform: translateY(-4px);
+      transform: translateY(-4px);
+    }
+    100% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+  }
+  @-webkit-keyframes hvr-bob-float {
+    100% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+  }
+  @keyframes hvr-bob-float {
+    100% {
+      -webkit-transform: translateY(-8px);
+      transform: translateY(-8px);
+    }
+  }
+  .hvr-bob {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  }
+  .hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+    -webkit-animation-name: hvr-bob-float, hvr-bob;
+    animation-name: hvr-bob-float, hvr-bob;
+    -webkit-animation-duration: .3s, .3s;
+    animation-duration: .3s, .3s;
+    -webkit-animation-delay: 0s, .3s;
+    animation-delay: 0s, .3s;
+    -webkit-animation-timing-function: ease-out, ease-in-out;
+    animation-timing-function: ease-out, ease-in-out;
+    -webkit-animation-iteration-count: 1, infinite;
+    animation-iteration-count: 1, infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal, alternate;
+    animation-direction: normal, alternate;
+  }
+
+  
+/* Skew Forward */
+.hvr-skew-forward {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}
+.hvr-skew-forward:hover, .hvr-skew-forward:focus, .hvr-skew-forward:active {
+  -webkit-transform: skew(-10deg);
+  transform: skew(-10deg);
+}
+
+  
+
+
+.zing-play__footer:hover{
+      .icon-footer{
+          transform: scale(0.8);
+          
+      }
+  }
+
+  @-webkit-keyframes footer-icon {
+    0%   {  transform: scale(1); }
+    50%   {  transform: scale(0.8); }
+    100% {  transform: scale(1); }
+  }
+  @-moz-keyframes footer-icon {
+    0%   {  transform: scale(1); }
+    50%   {  transform: scale(0.8); }
+    100% {  transform: scale(1); }
+  }
+  @-o-keyframes footer-icon {
+    0%   {  transform: scale(1); }
+    50%   {  transform: scale(0.8); }
+    100% {  transform: scale(1); }
+  }
+  @keyframes footer-icon {
+    0%   {  transform: scale(1); }
+    50%   {  transform: scale(0.8); }
+    100% {  transform: scale(1); }
+  }
